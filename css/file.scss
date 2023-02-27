@@ -1,0 +1,48 @@
+.file {
+    &__heading {
+        margin-bottom: 80px;
+
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 37px;
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    &__wrapper {
+        margin-bottom: 80px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 350px);
+        gap: 30px;
+    }
+
+    &__item {
+        padding-top: 40px;
+        padding-left: 40px;
+
+        background: url("../images/file/file-background.png") 0 0 / 350px 350px no-repeat;
+        box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.08);
+        border-radius: 8px;
+        color: #000000;
+        text-align: left;
+    }
+
+    &__icon {
+        margin-bottom: 87px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 25px;
+    }
+
+    &__description {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 16px;
+    }
+}
