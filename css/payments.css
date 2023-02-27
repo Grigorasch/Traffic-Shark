@@ -1,0 +1,25 @@
+.payments__heading {
+  margin: 0 auto 20px;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.payments__description {
+  margin: 0 auto 82px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #939393;
+}
+.payments__wallet-list {
+  margin: 0 auto 82px;
+  display: flex;
+  justify-content: space-between;
+  width: 910px;
+}
+
+.payments_text_blue {
+  color: #2E9ADB;
+}

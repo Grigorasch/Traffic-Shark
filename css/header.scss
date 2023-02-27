@@ -15,7 +15,7 @@ $color-green: #55B570;
     align-items: center;
     margin: 0 auto;
 
-    width: 1100px;
+    max-width: 1110px;
     height: 80px;
 
     &__logo-icon {
@@ -24,19 +24,29 @@ $color-green: #55B570;
 
     &__navigation {
         display: flex;
-        justify-content: space-between;
         align-items: center;
 
-        width: 636px;
         height: 100%;
 
         &-list {
+            position: relative;
             display: flex;
 
             height: 100%;
 
             text-transform: uppercase;
             text-decoration: none;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: -50px;
+
+                width: 1px;
+                height: 80px;
+                background: #F4F4F4;
+            }
 
             & li {
                 position: relative;
@@ -48,61 +58,131 @@ $color-green: #55B570;
         &-link {
             text-decoration: none;
             cursor: pointer;
-        }
 
-        &::before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 5px;
-            background: $color-blue;
-            opacity: 0;
-            transition: 0.3s;
-        }
-
-        &:hover::before {
-            opacity: 1;
-        }
-    }
-
-    &__page-link {
-
-        
-
-        &::before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 5px;
-            background: $color-blue;
-            opacity: 0;
-            transition: 0.3s;
-        }
-
-        &:hover::before {
-            opacity: 1;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 5px;
+                background: $color-blue;
+                opacity: 0;
+                transition: 0.3s;
+            }
+    
+            &:hover::before {
+                opacity: 1;
+            }
         }
     }
 
-    &__sign-link {
-        font-size: 13px;
-        font-weight: 800;
-        text-decoration: none;
-        color: $color-green;
-        cursor: pointer;
-
-        &::before {
-            content: "";
+    &__language {
+        &-checkbox {
             position: absolute;
-            width: 100%;
-            height: 5px;
-            background: $color-green;
-            opacity: 0;
-            transition: 0.3s;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+
+            &:focus-visible {
+                outline: none;
+
+                & + .header__language-label {
+                    outline: 2px solid #000000;
+                    outline-offset: 1px;
+                }
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+
+                width: 35px;
+                height: 28px;
+
+                background: $color-aqua;
+                border-radius: 14px;
+            }
+
+            &:checked + .header__language-label {
+                &::before {
+                    left: -1px;
+                }
+
+                & .header__language-country {
+                    &::before {
+                        color: $color-white;
+                    }
+
+                    &::after {
+                        color: #919191;
+                    }
+                }
+            }
+
+            &:checked + .header__language::after {
+                background: transparent;
+                color: #919191;
+            }
         }
 
-        &:hover::before {
-            opacity: 1;
+        &-label {
+            position: relative;
+
+            width: 65px;
+            height: 28px;
+
+            background: #F9F9F9;
+            border: 1px solid #EBEBEB;
+            border-radius: 14px;
+            cursor: pointer;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: -1px;
+                left: 29px;
+
+                width: 35px;
+                height: 28px;
+
+                background: $color-aqua;
+                border-radius: 14px;
+                transition: 0.3s;
+            }
+        }
+
+        &-country {
+            &::before, &::after {
+                position: absolute;
+                top: -1px;
+                width: 35px;
+                height: 28px;
+    
+                font-size: 11px;
+                font-weight: 700;
+                line-height: 28px;
+                text-align: center;
+                background: transparent;
+                border-radius: 14px;
+                transition: 0.3s;
+            }
+    
+            &::before {
+                content: "RU";
+                left: -1px;
+                color: #919191;
+            }
+    
+            &::after {
+                content: "EN";
+                left: 29px;
+                color: $color-white;
+            }
         }
     }
 }
@@ -112,16 +192,22 @@ $color-green: #55B570;
     &_navigation {
         &-gap {
             &_b {
+                margin-right: 100px;
                 gap: 50px;
                 font-size: 13px;
                 font-weight: 700;
                 
                 & li .header__navigation-link {
                     color: $color-gray;
+
+                    &::before {
+                        background: $color-blue;
+                    }
                 }
             }
 
             &_m {
+                margin-right: 80px;
                 gap: 18px;
                 font-size: 13px;
                 font-weight: 800;
@@ -129,21 +215,10 @@ $color-green: #55B570;
 
                 & li .header__navigation-link {
                     color: $color-green;
-                }
-            }
-
-            &_s {
-                gap: -5px;
-                font-size: 11px;
-                font-weight: 700;
-
-                & li .header__navigation-link {
-                    display: block;
-                    width: 35px;
-                    height: 28px;
-                    color: $color-white;
-                    background: $color-aqua;
-                    border-radius: 14px;
+                    
+                    &::before {
+                        background: $color-green;
+                    }
                 }
             }
         }

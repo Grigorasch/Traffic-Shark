@@ -1,0 +1,38 @@
+.advantages {
+    padding-top: 80px;
+
+    &__heading {
+        margin-bottom: 80px;
+
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 37px;
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    &__wrapper {
+        margin-bottom: 80px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        row-gap: 79px;
+        column-gap: 30px;
+    }
+
+    &__item {
+        height: 100%;
+    }
+
+    &__icon {
+        margin-bottom: 30px;
+    }
+
+    &__description {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 23px;
+        color: #000000;
+        white-space: pre-line;
+    }
+}

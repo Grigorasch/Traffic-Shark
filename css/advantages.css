@@ -1,0 +1,32 @@
+.advantages {
+  padding-top: 80px;
+}
+.advantages__heading {
+  margin-bottom: 80px;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.advantages__wrapper {
+  margin-bottom: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  row-gap: 79px;
+  column-gap: 30px;
+}
+.advantages__item {
+  height: 100%;
+}
+.advantages__icon {
+  margin-bottom: 30px;
+}
+.advantages__description {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 23px;
+  color: #000000;
+  white-space: pre-line;
+}

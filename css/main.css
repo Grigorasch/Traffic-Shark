@@ -1,0 +1,9 @@
+.main {
+  position: relative;
+  background: #FFFFFF;
+}
+.main__block {
+  margin: 0 auto;
+  width: 1110px;
+  text-align: center;
+}

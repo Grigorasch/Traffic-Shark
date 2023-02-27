@@ -1,0 +1,49 @@
+.regalia {
+    padding-top: 185px;
+    height: 704px;
+
+    background: url("../images/regalia/background.png");
+    background-position: top;
+    background-size: auto 717px;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+
+    &__heading {
+        margin-bottom: 20px;
+
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 37px;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        margin: 0 auto 80px; 
+        width: 730px;
+
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    &__item {
+        width: 350px;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    &__title {
+        display: block;
+        margin: 0 auto 30px;
+    }
+}

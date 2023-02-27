@@ -1,0 +1,60 @@
+.button {
+  display: block;
+  margin: 0 auto;
+  width: 350px;
+  height: 80px;
+  box-shadow: 0px 10px 20px rgba(78, 170, 224, 0.35);
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 80px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: 0.3s;
+}
+
+.button_color_blue {
+  background: #2E9ADB;
+  border: 2px solid #2E9ADB;
+}
+.button_color_blue:hover {
+  background: #FFFFFF;
+  color: #2E9ADB;
+}
+.button_color_transparent-blue {
+  background: transparent;
+  border: 2px solid #2E9ADB;
+  color: #2E9ADB;
+}
+.button_color_transparent-blue:hover {
+  background: #2E9ADB;
+  color: #FFFFFF;
+}
+.button_color_green {
+  background: #55B570;
+  border: 2px solid #55B570;
+}
+.button_color_green:hover {
+  background: #FFFFFF;
+  color: #55B570;
+}
+.button_arrow_down {
+  position: relative;
+}
+.button_arrow_down::after {
+  content: url("../images/arrow.svg");
+  position: absolute;
+  right: 40px;
+  top: 2px;
+}
+.button_arrow_right {
+  position: relative;
+}
+.button_arrow_right::after {
+  content: url("../images/arrow.svg");
+  position: absolute;
+  right: 38px;
+  top: -1px;
+  transform: rotate(-90deg);
+}

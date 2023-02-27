@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/info.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/advantages.css">
+    <link rel="stylesheet" href="./css/regalia.css">
+    <link rel="stylesheet" href="./css/payments.css">
+    <link rel="stylesheet" href="./css/file.css">
     <title>Traffic-Shark</title>
 </head>
 <body>
@@ -16,7 +23,6 @@
             <a href="/" class="header__logo">
                 <img src="./images/logo.png" alt="Логотип компании." class="header__logo-icon">
             </a>
-
             <nav class="header__navigation">
                 <ul class="header__navigation-list header_navigation-gap_b">
                     <li><a href="#" class="header__navigation-link">Вебмастерам</a></li>
@@ -26,12 +32,133 @@
                     <li><a href="#" class="header__navigation-link">Вход</a></li>
                     <li><a href="#" class="header__navigation-link">Регистрация</a></li>
                 </ul>
-                <ul class="header__navigation-list header_navigation-gap_s">
-                    <li><a href="#" class="header__navigation-link">RU</a></li>
-                    <li><a href="#" class="header__navigation-link">EN</a></li>
-                </ul>
+                <input type="checkbox" class="header__language-checkbox" name="language-clicker" id="language-clicker" checked>
+                <label for="language-clicker" class="header__language-label"><span class="header__language-country"></span></label>
             </nav>
         </div>
     </header>
+    <main class="main">
+        <section class="info">
+            <div class="info__content main__block">
+                <h1 class="info__heading">Мобильная партнерская сеть</h1>
+                <p class="info__description">Только рабочие офферы от прямых рекламодателей</p>
+                <ul class="info__achivment-list">
+                    <li><span class="info__achivment-title">300+</span>офферов по всему миру</li>
+                    <li><span class="info__achivment-title">70+</span>активных рекламодателей</li>
+                    <li><span class="info__achivment-title">6 лет</span>в аффилейт маркетинге</li>
+                    <li><span class="info__achivment-title">10.000+</span>конверсий в день</li>
+                </ul>
+                <nav class="info__navigation">
+                    <div class="info__navigation-block">
+                        <p class="info__navigation-description">Я пользователь соцсетей, блогер, владелец сайта или арбитражник и хочу сотрудничать с топовыми мировыми брендами.</p>
+                        <a href="" class="button button_color_blue button_arrow_down">Веб-мастерам</a>
+                    </div>
+
+                    <div class="info__navigation-block">
+                        <p class="info__navigation-description">Я владелец компании или маркетолог и хочу привлечь новых клиентов и увеличить продажи с помощью онлайн-рекламы.</p>
+                        <a href="" class="button button_color_green button_arrow_right">Рекламодателю</a>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <section class="advantages main__block">
+            <h2 class="advantages__heading">Работать с нами это</h2>
+            <div class="advantages__wrapper">
+                <div class="advantages__item">
+                    <img src="./images/advantages/icon-sheeld.svg" alt="" class="advantages__icon">
+                    <p class="advantages__description">Уверенность и стабильность!
+                        Мы на рынке с 2015г.</p>
+                </div>
+                <div class="advantages__item">
+                    <img src="./images/advantages/icon-phone.svg" alt="" class="advantages__icon">
+                    <p class="advantages__description">Большой выбор мобильных приложений и аддонов</p>
+                </div>
+                <div class="advantages__item">
+                    <img src="./images/advantages/icon-caller.svg" alt="" class="advantages__icon">
+                    <p class="advantages__description">Дружелюбная и квалифицированная поддержка</p>
+                </div>
+                <div class="advantages__item">
+                    <img src="./images/advantages/icon-money.svg" alt="" class="advantages__icon">
+                    <p class="advantages__description">Эффективная монетизация Pop-under, Push, In-App, FB, Google и других источников трафика</p>
+                </div>
+                <div class="advantages__item">
+                    <img src="./images/advantages/icon-diamond.svg" alt="" class="advantages__icon">
+                    <p class="advantages__description">Эксклюзивные предложения благодаря собственному сильному баингу</p>
+                </div>
+                <div class="advantages__item">
+                    <img src="./images/advantages/icon-wallet.svg" alt="" class="advantages__icon">
+                    <p class="advantages__description">Стабильные выплаты 1 раз в неделю от $100 после проверки качества</p>
+                </div>
+            </div>
+            <a href="" class="button button_color_transparent-blue">Регистрация</a>
+        </section>
+        <section class="regalia">
+            <div class="main__block">
+                <h2 class="regalia__heading">Мы всегда в топе!</h2>
+                <p class="regalia__description">Мы прямой рекламодатель с собственными офферами, которые входят в топ-чарты AppStore и Google Play.</p>
+                <div class="regalia__wrapper">
+                    <div class="regalia__item">
+                        <img class="regalia__title" src="./images/regalia/regalia-top.svg" alt="Топ.">
+                        Наши офферы входят в ТОПы в AppStore и Google Play
+                    </div>
+                    <div class="regalia__item">
+                        <img class="regalia__title" src="./images/regalia/regalia-offers.svg" alt="Офферы.">
+                        Мы делаем собственные белые мобильные офферы, которые вы не найдете ни в одной другой партнерке
+                    </div>
+                    <div class="regalia__item">
+                        <img class="regalia__title" src="./images/regalia/regalia-cost.svg" alt="2,5$.">
+                        Мы платим до $2.5 за инсталл и принимаем трафик со всего мира
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="payments main__block">
+            <h2 class="payments__heading">Еженедельные выплаты <span class="payments_text_blue">от $100</span></h2>
+            <p class="payments__description">На удобную для вас платежную систему из перечисленных ниже</p>
+            <ul class="payments__wallet-list">
+                <li><img src="./images/payments/logo-swift.png" alt="SWIFT." class="payments__logo"></li>
+                <li><img src="./images/payments/logo-capitalist.png" alt="Capitalist." class="payments__logo"></li>
+                <li><img src="./images/payments/logo-webmoney.png" alt="WebMoney" class="payments__logo"></li>
+                <li><img src="./images/payments/logo-payoneer.png" alt="Payoneer" class="payments__logo"></li>
+                <li><img src="./images/payments/logo-bitcoin.png" alt="Bitcoin" class="payments__logo"></li>
+                <li><img src="./images/payments/logo-tether.png" alt="Tether" class="payments__logo"></li>
+            </ul>
+        </section>
+        <section class="file main__block">
+            <h2 class="file__heading"></h2>
+            <div class="file__wrapper">
+                <div class="file__item">
+                    <img src="" alt="" class="file__icon">
+                    <h3 class="file__title"></h3>
+                    <p class="file__description"></p>
+                </div>
+                <div class="file__item">
+                    <img src="" alt="" class="file__icon">
+                    <h3 class="file__title"></h3>
+                    <p class="file__description"></p>
+                </div>
+                <div class="file__item">
+                    <img src="" alt="" class="file__icon">
+                    <h3 class="file__title"></h3>
+                    <p class="file__description"></p>
+                </div>
+                <div class="file__item">
+                    <img src="" alt="" class="file__icon">
+                    <h3 class="file__title"></h3>
+                    <p class="file__description"></p>
+                </div>
+                <div class="file__item">
+                    <img src="" alt="" class="file__icon">
+                    <h3 class="file__title"></h3>
+                    <p class="file__description"></p>
+                </div>
+                <div class="file__item">
+                    <img src="" alt="" class="file__icon">
+                    <h3 class="file__title"></h3>
+                    <p class="file__description"></p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

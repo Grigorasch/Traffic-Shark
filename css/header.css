@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  width: 1100px;
+  max-width: 1110px;
   height: 80px;
 }
 .header-wrapper {
@@ -15,16 +15,24 @@
 }
 .header__navigation {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 636px;
   height: 100%;
 }
 .header__navigation-list {
+  position: relative;
   display: flex;
   height: 100%;
   text-transform: uppercase;
   text-decoration: none;
+}
+.header__navigation-list::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -50px;
+  width: 1px;
+  height: 80px;
+  background: #F4F4F4;
 }
 .header__navigation-list li {
   position: relative;
@@ -35,7 +43,7 @@
   text-decoration: none;
   cursor: pointer;
 }
-.header__navigation::before {
+.header__navigation-link::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -44,42 +52,95 @@
   opacity: 0;
   transition: 0.3s;
 }
-.header__navigation:hover::before {
+.header__navigation-link:hover::before {
   opacity: 1;
 }
-.header__page-link::before {
+.header__language-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.header__language-checkbox:focus-visible {
+  outline: none;
+}
+.header__language-checkbox:focus-visible + .header__language-label {
+  outline: 2px solid #000000;
+  outline-offset: 1px;
+}
+.header__language-checkbox::before {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 5px;
-  background: #2E9ADB;
-  opacity: 0;
-  transition: 0.3s;
+  left: 0;
+  top: 0;
+  width: 35px;
+  height: 28px;
+  background: #4EAAE0;
+  border-radius: 14px;
 }
-.header__page-link:hover::before {
-  opacity: 1;
+.header__language-checkbox:checked + .header__language-label::before {
+  left: -1px;
 }
-.header__sign-link {
-  font-size: 13px;
-  font-weight: 800;
-  text-decoration: none;
-  color: #55B570;
+.header__language-checkbox:checked + .header__language-label .header__language-country::before {
+  color: #FFFFFF;
+}
+.header__language-checkbox:checked + .header__language-label .header__language-country::after {
+  color: #919191;
+}
+.header__language-checkbox:checked + .header__language::after {
+  background: transparent;
+  color: #919191;
+}
+.header__language-label {
+  position: relative;
+  width: 65px;
+  height: 28px;
+  background: #F9F9F9;
+  border: 1px solid #EBEBEB;
+  border-radius: 14px;
   cursor: pointer;
 }
-.header__sign-link::before {
+.header__language-label::before {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 5px;
-  background: #55B570;
-  opacity: 0;
+  top: -1px;
+  left: 29px;
+  width: 35px;
+  height: 28px;
+  background: #4EAAE0;
+  border-radius: 14px;
   transition: 0.3s;
 }
-.header__sign-link:hover::before {
-  opacity: 1;
+.header__language-country::before, .header__language-country::after {
+  position: absolute;
+  top: -1px;
+  width: 35px;
+  height: 28px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  background: transparent;
+  border-radius: 14px;
+  transition: 0.3s;
+}
+.header__language-country::before {
+  content: "RU";
+  left: -1px;
+  color: #919191;
+}
+.header__language-country::after {
+  content: "EN";
+  left: 29px;
+  color: #FFFFFF;
 }
 
 .header_navigation-gap_b {
+  margin-right: 100px;
   gap: 50px;
   font-size: 13px;
   font-weight: 700;
@@ -87,7 +148,11 @@
 .header_navigation-gap_b li .header__navigation-link {
   color: #565656;
 }
+.header_navigation-gap_b li .header__navigation-link::before {
+  background: #2E9ADB;
+}
 .header_navigation-gap_m {
+  margin-right: 80px;
   gap: 18px;
   font-size: 13px;
   font-weight: 800;
@@ -96,16 +161,6 @@
 .header_navigation-gap_m li .header__navigation-link {
   color: #55B570;
 }
-.header_navigation-gap_s {
-  gap: -5px;
-  font-size: 11px;
-  font-weight: 700;
-}
-.header_navigation-gap_s li .header__navigation-link {
-  display: block;
-  width: 35px;
-  height: 28px;
-  color: #FFFFFF;
-  background: #4EAAE0;
-  border-radius: 14px;
+.header_navigation-gap_m li .header__navigation-link::before {
+  background: #55B570;
 }
