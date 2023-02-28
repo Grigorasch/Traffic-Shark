@@ -1,9 +1,8 @@
 .form {
-    padding-top: 213px;
+    padding: 213px 0 140px;
 
     text-align: center;
-    background: url("../images/form/wave-down1.svg") 50% 705px / 1440px no-repeat, url("../images/form/wave-down2.svg") 50% 705px / 1440px no-repeat, url("../images/form/wave-down3.svg") 50% 705px / 1440px no-repeat, url("../images/form/wave-up1.svg") 50% -167px / 1440px no-repeat, url("../images/form/wave-up2.svg") 50% -167px / 1440px no-repeat, url("../images/form/wave-up3.svg") 50% -167px / 1440px no-repeat, url("../images/form/dots.png") 50% 263px / 1310px auto no-repeat, linear-gradient(195.2deg, #2E9ADB 10.68%, #55B570 89.32%) 50% 50% / 1440px auto no-repeat;
-    height: 1000px;
+    background: url("../images/form/wave-down1.svg") 50% 705px / 1440px no-repeat, url("../images/form/wave-down2.svg") 50% 705px / 1440px no-repeat, url("../images/form/wave-down3.svg") 50% 692px / 1440px no-repeat, url("../images/form/wave-up1.svg") 50% -167px / 1440px no-repeat, url("../images/form/wave-up2.svg") 50% -167px / 1440px no-repeat, url("../images/form/wave-up3.svg") 50% -167px / 1440px no-repeat, url("../images/form/dots.png") 50% 263px / 1310px auto no-repeat, linear-gradient(195.2deg, #2E9ADB 10.68%, #55B570 89.32%) 50% 50% / 1440px auto no-repeat;
 
     &__heading {
         margin-bottom: 40px;
