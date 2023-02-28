@@ -1,0 +1,17 @@
+.sponsors__heading {
+  margin: 0 auto 80px;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.sponsors__logo {
+  margin-bottom: 80px;
+}
+.sponsors__description {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #939393;
+}
