@@ -1,0 +1,104 @@
+.footer {
+    text-align: start;
+
+    &__logo {
+        margin-bottom: 27px;
+    }
+
+    &__wrapper {
+        margin-bottom: 60px;
+        display: grid;
+        grid-template-columns: 186px 174px 1fr;
+        gap: 200px;
+    }
+
+    &__law-description {
+        margin-bottom: 30px;
+
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        color: #7E7E7E;
+        white-space: pre-line;
+    }
+
+    &__law-link {
+        display: block;
+
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        color: #2E9ADB;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__list {
+        & li:not(:last-child) {
+            margin-bottom: 28px;
+        }
+    }
+
+    &__navigation-link {
+        position: relative;
+        top: -2px;
+        left: 4px;
+
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        color: #1C1C1C;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+//Модификаторы
+.footer {
+    &_list_marker {
+        &_arrow {
+            padding-left: 17px;
+
+            list-style-image: url(../images/footer/list-image.svg);
+        }
+
+        &_app-icon {
+            padding-left: 23px;
+
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19px;
+            color: #000000;
+
+            & li {
+                position: relative;
+                left: 0px;
+                top: -4px;
+            }
+
+            & li:nth-child(1) {
+                list-style-image: url(../images/footer/icon-email.svg);
+            }
+
+            & li:nth-child(2) {
+                list-style-image: url(../images/footer/icon-telegram.svg);
+            }
+
+            & li:nth-child(3) {
+                list-style-image: url(../images/footer/icon-skype.svg);
+            }
+        }
+    }
+}
