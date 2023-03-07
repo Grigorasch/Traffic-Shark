@@ -23,6 +23,9 @@
   background: #FFFFFF;
   color: #2E9ADB;
 }
+.button_color_blue:hover::after {
+  filter: url("data:image/svg+xml;utf8,<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg'><filter id='makeColor'><feColorMatrix in='SourceGraphic' type='matrix' values='0 0 0 0 0.18 0 0 0 0 0.604 0 0 0 0 0.859 0 0 0 1 0'/></filter></svg>#makeColor");
+}
 .button_color_green {
   background: #55B570;
   border: 2px solid #55B570;
@@ -30,6 +33,9 @@
 .button_color_green:hover {
   background: #FFFFFF;
   color: #55B570;
+}
+.button_color_green:hover::after {
+  filter: url("data:image/svg+xml;utf8,<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg'><filter id='makeColor'><feColorMatrix in='SourceGraphic' type='matrix' values='0 0 0 0 0.333 0 0 0 0 0.71 0 0 0 0 0.439 0 0 0 1 0'/></filter></svg>#makeColor");
 }
 .button_color_transparent-blue {
   background: transparent;

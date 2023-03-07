@@ -1,14 +1,4 @@
 .payments {
-    &__heading {
-        margin: 0 auto 20px;
-
-        font-size: 30px;
-        font-weight: 900;
-        line-height: 37px;
-        text-transform: uppercase;
-        color: #000000;
-    }
-
     &__description {
         margin: 0 auto 82px;
 
@@ -23,15 +13,5 @@
         display: flex;
         justify-content: space-between;
         width: 910px;
-    }
-}
-
-
-//Модификаторы
-.payments {
-    &_text {
-        &_blue {
-            color: #2E9ADB;
-        }
     }
 }

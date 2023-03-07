@@ -196,14 +196,6 @@ $color-green: #55B570;
                 gap: 50px;
                 font-size: 13px;
                 font-weight: 700;
-                
-                & li .header__navigation-link {
-                    color: $color-gray;
-
-                    &::before {
-                        background: $color-blue;
-                    }
-                }
             }
 
             &_m {
@@ -213,12 +205,32 @@ $color-green: #55B570;
                 font-weight: 800;
                 color: $color-green;
 
-                & li .header__navigation-link {
-                    color: $color-green;
-                    
-                    &::before {
-                        background: $color-green;
-                    }
+
+            }
+        }
+
+        &_hover-link {
+            &_gray-blue {             
+                color: $color-gray;
+
+                &::before {
+                    background: $color-blue;
+                }
+            }
+
+            &_gray-green {             
+                color: $color-gray;
+
+                &::before {
+                    background: $color-green;
+                }
+            }
+
+            &_green {
+                color: $color-green;
+                
+                &::before {
+                    background: $color-green;
                 }
             }
         }

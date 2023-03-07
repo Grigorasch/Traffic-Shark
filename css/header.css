@@ -145,12 +145,6 @@
   font-size: 13px;
   font-weight: 700;
 }
-.header_navigation-gap_b li .header__navigation-link {
-  color: #565656;
-}
-.header_navigation-gap_b li .header__navigation-link::before {
-  background: #2E9ADB;
-}
 .header_navigation-gap_m {
   margin-right: 80px;
   gap: 18px;
@@ -158,9 +152,21 @@
   font-weight: 800;
   color: #55B570;
 }
-.header_navigation-gap_m li .header__navigation-link {
+.header_navigation_hover-link_gray-blue {
+  color: #565656;
+}
+.header_navigation_hover-link_gray-blue::before {
+  background: #2E9ADB;
+}
+.header_navigation_hover-link_gray-green {
+  color: #565656;
+}
+.header_navigation_hover-link_gray-green::before {
+  background: #55B570;
+}
+.header_navigation_hover-link_green {
   color: #55B570;
 }
-.header_navigation-gap_m li .header__navigation-link::before {
+.header_navigation_hover-link_green::before {
   background: #55B570;
 }

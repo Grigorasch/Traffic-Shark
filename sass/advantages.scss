@@ -1,0 +1,28 @@
+.advantages {
+    &__wrapper {
+        // padding-top: 80px;
+        // margin-bottom: 80px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        height: 545px;
+    }
+
+    &__item {
+        width: 350px;
+        // height: 100%;
+    }
+
+    &__icon {
+        margin-bottom: 30px;
+    }
+
+    &__description {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 23px;
+        color: #000000;
+        white-space: pre-line;
+    }
+}
